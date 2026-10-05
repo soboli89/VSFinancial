@@ -704,7 +704,7 @@ document.addEventListener('DOMContentLoaded', () => {
             <h2>Ready to move faster?</h2>
             <p>Turn financial challenges into opportunities with expert guidance built around your goals. Contact us!</p>
           </div>
-          <form class="contact-form" action="mailto:soboli1989@gmail.com" method="post" enctype="text/plain">
+          <form class="contact-form" action="https://formsubmit.co/vsfinbrand@gmail.com" method="POST"  enctype="text/plain">
             <label for="contact-name">Name
               <input id="contact-name" name="name" type="text" autocomplete="name" required>
             </label>
