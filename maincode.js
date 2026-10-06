@@ -434,6 +434,46 @@ document.addEventListener('DOMContentLoaded', () => {
       line-height: 1.5;
     }
 
+    .services-section {
+      margin-top: 46px;
+    }
+
+    .services-heading {
+      margin-bottom: 24px;
+    }
+
+    .services-heading h2 {
+      margin: 0;
+      font-size: clamp(2rem, 3vw, 2.8rem);
+      letter-spacing: -0.05em;
+    }
+
+    .story-article {
+      margin-top: 46px;
+      padding: 28px 30px;
+      border-radius: 28px;
+      border: 1px solid rgba(255,255,255,0.08);
+      background: linear-gradient(135deg, rgba(110, 231, 183, 0.06), rgba(124, 156, 255, 0.06));
+      box-shadow: var(--shadow);
+    }
+
+    .story-article h2 {
+      margin: 0 0 16px;
+      font-size: clamp(2rem, 3vw, 2.8rem);
+      letter-spacing: -0.05em;
+    }
+
+    .story-article p {
+      margin: 0 0 18px;
+      color: var(--muted);
+      line-height: 1.8;
+      font-size: 1.02rem;
+    }
+
+    .story-article p:last-child {
+      margin-bottom: 0;
+    }
+
     .cta-panel {
       margin-top: 46px;
       padding: 28px 30px;
@@ -698,24 +738,73 @@ document.addEventListener('DOMContentLoaded', () => {
           </div>
         </section>
 
+        <article class="story-article" aria-label="About the founder">
+          <div class="eyebrow">About me</div>
+          <h2>Hi, I’m Viktor Sobolevskyi.</h2>
+          <p>
+            I help businesses and individuals move forward with clarity, confidence, and smart strategic decisions.
+            With over 10 years of experience in economics, accounting, and auditing, I provide businesses with a strategic approach to financial management and growth. My expertise combines financial insight, analytical thinking, and practical business experience to help clients make confident decisions, optimize performance, and build a stronger financial foundation. I focus on delivering clarity, precision, and tailored solutions designed to create sustainable, long-term value.
+
+          </p>
+          <p>
+            My work is rooted in building meaningful results through practical guidance, trusted advice, and long-term thinking.
+            My approach is built on precision, integrity, and a deep understanding of how financial decisions shape the future of a business. Throughout my career, I have worked with complex financial information, identified opportunities for improvement, and helped create more efficient and sustainable financial processes. My mission is to go beyond numbers—to become a trusted financial partner who brings clarity to complexity and helps clients turn financial insight into meaningful business growth.
+
+          </p>
+        
+        </article>
+
         
         <section class="cta-panel" id="start">
           <div>
             <h2>Ready to move faster?</h2>
             <p>Turn financial challenges into opportunities with expert guidance built around your goals. Contact us!</p>
           </div>
-          <form class="contact-form" action="https://formsubmit.co/vsfinbrand@gmail.com" method="POST"  enctype="text/plain">
-            <label for="contact-name">Name
-              <input id="contact-name" name="name" type="text" autocomplete="name" required>
+           <form class="contact-form" action="https://formsubmit.co/vsfinbrand@gmail.com" method="POST"  enctype="text/plain"> 
+
+
+
+
+          <!--<form class="contact-form" target="_blank" action="https://formsubmit.co/vsfinbrand@gmail.com" method="POST">-->
+          <!--  <div class="form-group">
+              <div class="form-row">
+                <div class="col">
+                  <input type="text" name="name" class="form-control" placeholder="Full Name" required>
+                </div>
+                <div class="col">
+                  <input type="email" name="email" class="form-control" placeholder="Email Address" required>
+                </div>
+              </div>
+            </div>
+            <div class="form-group">
+              <textarea placeholder="Your Message" class="form-control" name="message" rows="10" required></textarea>
+            </div>
+            <button type="submit" class="btn btn-lg btn-dark btn-block">Submit Form</button>-->
+          
+          
+          
+          
+          
+          
+          
+          
+          
+          <label for="contact-name">Name
+            <input type="text" name="name" class="form-control" placeholder="Full Name" required>  
+            <!-- input id="contact-name" name="name" type="text" autocomplete="name" required>-->
             </label>
             <label for="contact-email">Email
-              <input id="contact-email" name="email" type="email" autocomplete="email" required>
+              <input type="email" name="email" class="form-control" placeholder="Email Address" required>  
+              <!--  <input id="contact-email" name="email" type="email" autocomplete="email" required>-->
+
             </label>
             <label for="contact-message">How can we help?
-              <textarea id="contact-message" name="message" required></textarea>
+              <!--<textarea id="contact-message" name="message" required></textarea>-->
+              <textarea placeholder="Your Message" class="form-control" name="message" rows="10" required></textarea>
             </label>
             <button type="submit" class="btn btn-primary">Send message</button>
           </form>
+        
         </section>
       </main>
     </div>
